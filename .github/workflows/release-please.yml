@@ -1,0 +1,23 @@
+# Keeps a release pull request up to date from Conventional Commits on main.
+# Merging it bumps `version` in src/descriptor.mod (the line marked
+# x-release-please-version), updates CHANGELOG.md and creates a DRAFT release.
+# Publishing that draft on GitHub starts workshop-publish.yml.
+
+name: release-please
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
