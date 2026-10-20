@@ -1,0 +1,9 @@
+# Publishing to the Steam Workshop with paradox-workshop-publish
+# (https://github.com/happy-dwarf-team/paradox-workshop-publish).
+# The Workshop item ID is remote_file_id in src/descriptor.mod. Without
+# `description` and `visibility`, publishing never changes them on Steam.
+schema = 1
+
+[[mod]]
+game = "eu4"
+path = "src"
