@@ -22,6 +22,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: happy-dwarf-team/paradox-workshop-publish@v0.1.1
+      - uses: happy-dwarf-team/paradox-workshop-publish@v0.1.3
         with:
           dry-run: true
