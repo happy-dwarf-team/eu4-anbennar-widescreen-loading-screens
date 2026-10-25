@@ -1,9 +1,12 @@
 # Publish the mod to the Steam Workshop when a GitHub release is published.
 
 #
-# Needs a `steam-workshop` environment with the secrets STEAM_SESSION and
-# STEAM_USERNAME (docs/guide/setup.md). Recommended: required reviewers on the
-# environment, and deployment tags limited to v*.
+# Needs the organization secrets STEAM_SESSION and STEAM_USERNAME with this
+# repository selected, shared by the Happy Dwarf Team repositories that publish
+# to the Workshop, and the `steam-workshop` environment, which gates the job
+# with a required reviewer and deployment tags limited to v*
+# (paradox-workshop-publish docs/guide/setup.md, "Several repositories in one
+# organization").
 #
 # A release published from the GitHub web interface or `gh release create`
 # starts this workflow. One created by another workflow with the default
