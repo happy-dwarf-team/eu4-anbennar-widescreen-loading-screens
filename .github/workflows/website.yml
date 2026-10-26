@@ -1,0 +1,39 @@
+# Rebuild happydwarf.dev (the hub) when a GitHub release is published, so its
+# row shows the new version. A release published from the GitHub web interface
+# or `gh release create` starts this workflow, as it starts workshop-publish.yml.
+# Run it by hand to resend the dispatch.
+#
+# Needs the organization secret WEBSITE_DISPATCH_TOKEN, a fine-grained token
+# with Contents: write on happy-dwarf-team/happydwarf-website. Without it the
+# job skips the dispatch with a notice.
+
+name: website
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  notify-website:
+    runs-on: ubuntu-latest
+    permissions: {}
+    env:
+      DISPATCH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
+    steps:
+      - name: Trigger website rebuild
+        if: env.DISPATCH_TOKEN != ''
+        env:
+          GH_TOKEN: ${{ env.DISPATCH_TOKEN }}
+          TAG: ${{ github.event.release.tag_name || github.ref_name }}
+        run: |
+          gh api repos/happy-dwarf-team/happydwarf-website/dispatches \
+            -f event_type=project-release \
+            -f "client_payload[repository]=${GITHUB_REPOSITORY}" \
+            -f "client_payload[tag]=${TAG}"
+
+      - name: Skip website rebuild (no WEBSITE_DISPATCH_TOKEN)
+        if: env.DISPATCH_TOKEN == ''
+        run: echo "::notice::WEBSITE_DISPATCH_TOKEN is not set; happydwarf-website rebuild not triggered"
