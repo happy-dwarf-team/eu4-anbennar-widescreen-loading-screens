@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Dependabot moves the workflow actions to their newer releases.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: ci
