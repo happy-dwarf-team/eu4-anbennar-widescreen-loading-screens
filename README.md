@@ -32,7 +32,8 @@ lists Anbennar as a dependency, so the launcher loads it after Anbennar.
 - Every pull request gets a dry-run preview of the Workshop upload
   (`workshop-preview.yml`), and publishing the GitHub release uploads the mod
   with [paradox-workshop-publish](https://github.com/happy-dwarf-team/paradox-workshop-publish)
-  (`workshop-publish.yml`, configured in [`workshop.toml`](workshop.toml)).
+  (`workshop-publish.yml`, configured in [`workshop.toml`](workshop.toml)) and
+  asks [happydwarf.dev](https://happydwarf.dev/) to rebuild (`website.yml`).
 
 ## License
 
