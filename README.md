@@ -25,6 +25,10 @@ lists Anbennar as a dependency, so the launcher loads it after Anbennar.
 
 - [`src/`](src) is the mod folder: `descriptor.mod`, the thumbnail and the
   loading screens.
+- [`workshop/description.md`](workshop/description.md) is the Workshop
+  description, written by the team's
+  [Workshop page convention](https://github.com/happy-dwarf-team/.github/blob/main/docs/workshop-pages.md).
+  Every publish replaces the description on Steam with it.
 - Pull requests use [Conventional Commits](https://www.conventionalcommits.org/)
   titles. [release-please](https://github.com/googleapis/release-please) keeps
   a release pull request; merging it bumps `version` in `src/descriptor.mod`,
