@@ -34,8 +34,9 @@ If the image existed, the dwarves have probably widened it.
 ![](https://i.imgur.com/Uf8Z21n.png)
 
 ## More from Happy Dwarf Team
-- **[Anvil](https://anvil.happydwarf.dev/)**: a small add-on for EU4 that lets you run plugins like the one below, installed once from its website.
+- **[Anvil](https://anvil.happydwarf.dev/)**: a small add-on for EU4 that lets you run plugins like the ones below, installed once from its website.
 - **[Bellows - Faster Game Start](https://steamcommunity.com/sharedfiles/filedetails/?id=3823747170)**: big mod sets like Anbennar start much faster, on our test machine in about 22 seconds instead of 85.
+- **[Mei](https://steamcommunity.com/sharedfiles/filedetails/?id=3832685486)**: Chinese, Japanese and Korean text in EU4, for the translation mod of your choice.
 - Everything we make: [happydwarf.dev](https://happydwarf.dev/)
 
 ![](https://i.imgur.com/Uf8Z21n.png)
