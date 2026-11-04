@@ -1,0 +1,46 @@
+name: Bug report
+description: A loading screen that looks wrong, is missing or does not appear.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. This mod replaces only Anbennar's images in `gfx/loadingscreens`. It needs no Anvil and has no settings. It must load after Anbennar in the playset.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead. A screenshot helps most here.
+    validations:
+      required: true
+  - type: input
+    id: resolution
+    attributes:
+      label: Resolution and display mode
+      description: E.g. `3440 × 1440, fullscreen`.
+    validations:
+      required: true
+  - type: dropdown
+    id: anbennar
+    attributes:
+      label: Anbennar
+      options:
+        - "Anbennar: A Fantasy Total Conversion"
+        - Anbennar-PublicFork
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: As shown in the launcher, e.g. `1.37.5`.
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Playset
+      description: The mods of the playset in their load order, or the ones that change `gfx/loadingscreens`.
+    validations:
+      required: true
