@@ -37,6 +37,7 @@ jobs:
       - uses: happy-dwarf-team/paradox-workshop-publish@7366a4306b3c81157837bcdce7f138bc86e5d50b # v1.0.0
         id: workshop
         with:
+          pdx-ws-version: v1.0.0
           steam-username: ${{ secrets.STEAM_USERNAME }}
           steam-session: ${{ secrets.STEAM_SESSION }}
           # The release notes become the Workshop change note. When they are
