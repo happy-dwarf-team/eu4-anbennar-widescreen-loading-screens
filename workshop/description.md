@@ -35,6 +35,8 @@ If the image existed, the dwarves have probably widened it.
 
 [![](https://anvil.happydwarf.dev/workshop/collection-en.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=3833899418)
 
+[![](https://anvil.happydwarf.dev/workshop/discord-en.png)](https://discord.happydwarf.dev/)
+
 ## FAQ
 
 ### What load order should I use?
@@ -53,6 +55,9 @@ Because 4:3 paintings stretched across a 21:9 monitor look like a kobold crime.
 This mod attempts to correct that.
 With hammer.
 And discipline.
+
+### Something's wrong. Where do I ask?
+In **#help-and-bugs** on our [Discord server](https://discord.happydwarf.dev/) (pick the Other tag), or in a [GitHub issue](https://github.com/happy-dwarf-team/eu4-anbennar-widescreen-loading-screens/issues/new/choose). A comment below works too.
 
 ### What is that little dwarf head on the thumbnail?
 If you check the mod's GitHub page, you will notice the repository belongs to Happy Dwarf Team.
