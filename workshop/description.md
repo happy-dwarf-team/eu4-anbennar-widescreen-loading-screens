@@ -40,9 +40,7 @@ If the image existed, the dwarves have probably widened it.
 ## FAQ
 
 ### What load order should I use?
-It does not matter. You cannot really control it from the launcher anyway, even if Paradox lets you pretend otherwise.
-
-The only real way to influence load order is through properly set mod dependencies. If that is not done, EU4 resolves conflicts alphabetically. A beats Z. Dwarf law.
+It doesn't matter. The launcher's order is mostly for show: EU4 follows mod dependencies and otherwise settles conflicts alphabetically. A beats Z. Dwarf law.
 
 ### Is it compatible with X?
 Probably yes.
