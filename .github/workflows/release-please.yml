@@ -17,7 +17,12 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      # With the default token the release PR does not trigger CI (GitHub does not
+      # start workflows from GITHUB_TOKEN events), so its required checks never
+      # report and the merge is refused. The organisation's RELEASE_PLEASE_TOKEN
+      # secret, as in the plugin repositories, makes the checks run on it.
       - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
         with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN || github.token }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
