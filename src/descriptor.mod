@@ -1,4 +1,4 @@
-version="v1.0.0" # x-release-please-version
+version="v1.0.1" # x-release-please-version
 picture="thumbnail.png"
 tags={
 	"Loading Screen"
